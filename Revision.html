@@ -1,0 +1,1183 @@
+/*var a;
+a = 6;
+alert (a);
+Here semicolon is the end statement of single block code.
+var a = "new js with few tech";
+alert(a);
+document.write(a);
+document.write("<br>");
+//Here br is the tag of html so you can use this tag with js file
+
+LET, VAR, CONST IN JS
+ var x = 8;
+ var y = 9;
+ z = x+y;
+ document.write(z);
+ var container = 5;
+ var y = 3;
+   var k = container + y;
+  console.log(k);
+  let x ; //  declaring value
+   x = 5; //assign value (initilization)
+   console.log(x);
+let c = 3;
+const d = 6;
+d = 9;
+c = 7;
+console.log(d);
+//with const we cant change value because its cosntant so value not will be reassigned
+
+OPERATOR IN JAVASCRIPT:-
+Addition in js :-
+let a= 5;
+ let b= 4;
+let c = a + b;
+console.log(c);
+substraction in js 
+ let e = 8;
+ let f = 7;
+ let g = e - f;
+ console.log(g);
+ Multiplication in js
+  let e = 8;
+ let f = 7;
+ let g = e*f;
+ console.log(g);
+ Division in js 
+  let e = 8;
+ let f = 7;
+ let g = e/f;
+ console.log(g);
+ Moduler opertor to find reminder in js
+  let e = 8;
+ let f = 7;
+ let g = e%f;
+ console.log(g);
+let x = 10;
+x = x + 9;
+console.log(x);
+or let x = 10;
+x += 9;
+console.log(x); [it will give same output only diff of suntax which is worked is plus equal to operator (+=)]
+means in simple words 
+x = x+y;
+x += y; both syntax give same ouput
+its applicable for all operator like 
+-=; *=, /=,
+ for the power and square value (5(2)=>25)
+ let x = 5;
+y = x**2;
+console.log(y);
+String value:-
+let x = 3;//number
+let y = "3"; //string (text)
+(string+number= string);[in js it converts number to string first]
+console.log(x+y);
+33
+for same value ->  
+let a = "hello";
+let b = "JS";
+console.log(a+b); 
+helloJS;
+for space in helloJS
+console.log(a+""+b); (here double quotes is also counts as string value so it will take space in the place)
+hello JS
+console.log(x+""+y);
+3 3
+for increase one digit in value means
+let x = 6;
+x = x+3; (this is first method for increase one digit in x value)
+ x++; (this is second method for increase one digit in x value)(++operator)
+console.log(x); (it will print 9 in both  case)
+as welll as it will applicable for -- operator
+let y = 9;
+y--;
+console.log(y); 
+8
+for divide 
+let x = 8;
+let y = x + 8 / 8;
+console.log(x);
+9 (flow 8/8  reminder=1 8+1 = 9)
+ans will be added 1 no. means 9
+in the programmimg divider is following BODMAS Rule Brackets, Orders, Division, Multiplication, Addition, Subtraction. 
+by BODMAS it will work like this
+let x = 8;
+let y = (x+8) /8 ;
+console.log(y);
+2
+DATA TYPE IN JS
+typeof
+let x = 9; // let x = typeof "js" console.log(x)
+console.log(typeofx)
+1.String
+let x  = "this is new";
+alert("code" + x);
+
+2.Number
+3.Boolean \\ it will give result in true or false
+ex-: 3>2 TRUE or FALSE
+4.Array
+let arr = ["hey","js",567,98,21];
+NOTE : Template literal ${x} =>this sign is known as template lieteral and it will work with ''
+
+COMPARISON AND LOGICAL OPERATOR
+== Equal to
+4 == 4// TRUE
+8==7 // FALSE
+6 =='6'//TRUE
+=== Equal value and equal type OR Strict Equality Operator  (it matches data type with value)
+4 === 4 //TRUE
+7==== 8 // FALSE
+5=== '5' //FALSE 
+!= Not Equal to
+7 != 6 // TRUE
+4 != 4 // FALSE
+!== Not Equal value or not equal type Strict InEquality Operator 
+ 2!== 3 // TRUE
+
+*/
+/* TODAYS TOPICS
+*COMPARISON OPERATOR*
+1. GREATER THAN (>)
+ex- 5>8 => FALSE
+1. GREATER THAN OR EQUAL TO(>=)
+ex- 8>= 8  TURE 
+2. LESS THAN (<)
+ex- 8<8 => TRUE
+2. LESS THAN OR EQUAL TO(<=)
+ex- 7<= 7  TRUE
+*LOGICAL OPERTAOR*
+&& (AND OPERATOR) its checks both condition if both afre matching then its gives  true result
+ex- (5< 10 && 6 >1)  TRUE
+(5 > 10 && 6>1)  FALSE
+|| (OR OPERATOR) its checks only one condition in whole one block and its gives true result
+(3==3||6==5)  TRUE
+(7==5 || 3==2) FALSE
+!(NOT OPERATOR) it is oppose true result and false into true
+!(6==5) TRUE (here is  6 is not equal to 5 but because of not operator it gives true result)
+IF-ELSE CONDITIONS
+let age = 14; or  let age = 12;
+if(age>= 14){
+  alert("you can vote");
+} else {
+  alert("you cant vote");
+}
+=> you can vote => you cant vote
+if else with and operator with two camparison
+let age = 14;
+let hasVoterCard = "No";
+ if (age>=14 &&hasVoterCrad=="Yes"){
+  alert("you can vote")
+ }else {
+  alert ("you cant vote")
+ }
+ case if person is not having id card so here is new if else condition :
+  let age = 15;
+let hasVoterCard = "No";
+ if (age>=14 &&hasVoterCard=="Yes"){
+
+  alert("you can vote")
+
+ } 
+ else if (age>=14 &&hasVoterCard !="Yes"){
+
+   alert ("get your voter id card")
+
+ }
+  else {
+
+    alert("you cant vote")
+
+  }
+   result => get your voter if card
+
+  //  TERNARY OPERATOR
+   ex1 let isLoggedin = 0;//if 0 Loggedout if 1 then Login
+   if(isLoggedin==0){
+    document.write("Login");
+   }else(isLoggedin==1){
+    document.write("Logout");
+   }
+
+   ex2 : let option = isLoggedin == 1 ? "Logout" : "Login" ;
+                          //  |                |         |
+                // Condition                   (TRUE)    (FALSE)
+   document.write(option);
+   its used for when a user login in any login page 
+   let user; //(user) variable defined but not assigned
+   cosnole.log(user) => undefined //its gives undefined because we didnt assign any value for this varaible
+     for storing any user detail in login 
+     user = "johndoe";
+     alert(user) //for showing user name in alert
+   Nullish coalescing operator (??)
+   is a logical operator that returns its right-hand side operand when its left-hand side operand is null
+    or undefined , and otherwise returns its left-hand side operand.
+    alert(user?? "guest");
+    here this operator is used for when usename does not match then it will showing this guest user name 
+ *SWITCH CASE STATEMENT*
+  if input  = 1 , "y", "yes", output = continue...;
+  if input  = 0 , "n","No", output = End...;
+    
+   let input ;
+   input = 1;
+
+    if (input === 1) {
+      document.write("continue....");
+            }
+  else if (input === "y") {
+      document.write("continue....");
+  }else if (input === "yes") {
+      document.write("continue....");
+  }else if (input === 0) {
+      document.write("End....");
+  }else if (input === "n") {
+      document.write("End....");
+  }else if (input === "No") {
+      document.write("End....");
+  }else{
+      document.write("Wrong Input....");
+  }
+  // === comparison
+  1st Method
+   switch(input) {
+      case 1: //if (input === 1) 
+      document.write("continue....");
+       break;
+       case "y": //if (input === "y")
+      document.write("continue....");
+       break;
+      case "yes": //if (input === "yes")
+     document.write("continue....");
+     break;
+     case 0: //if (input === 0)
+           document.write("End....");
+        break;
+        case "n": //if (input === "n")
+           document.write("End....");
+        break;
+     case "No": //if (input === "No")
+           document.write("End....");
+        break;
+        default:
+        document.write("Wrong input");
+   }
+  using break in every bit of code because output comes one by one not in continuous manner
+   2nd method
+   switch(input) {
+      case 1: //if (input === 1) 
+       case "y": //if (input === "y")
+      case "yes": //if (input === "yes")
+     document.write("continue....");
+     break;
+     case 0: //if (input === 0)
+        case "n": //if (input === "n")
+     case "No": //if (input === "No")
+           document.write("End....");
+        break;
+        default:
+        document.write("Wrong input");
+   }
+3rd method 
+ switch(input) {
+      if (input === 1 ||input === "y"||input === "yes") 
+     document.write("continue....");
+     break;
+       else if (input === 0||input === "n"||input === "No")
+           document.write("End....");
+*LOOPS IN JS *
+1.
+
+2. WHILE LOOP*(Entry control loop)
+Syntax while(condition){
+  code of block is executed 
+}
+  et counter = 1;
+   while(counter<=10){
+    console.log("hello javascript code")
+     counter++;  //counter = counter+1 or counter+=1;
+   }
+
+ex- var i = 0;    OR var i = 0;
+while(i<=32){        while(i<=32){                    
+   console.log(i)     i++;
+   i++;             console.log(i)}
+}
+o/p: 1                o/p:    Till 33
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+ex-2 sum of even no. through while loop
+let counter = 1;
+let sum = 0;
+while(counter<=100){
+ if(counter % 2 == 0){
+  sum = sum+counter;
+ }
+  counter++;
+}
+console.log(sum)
+
+2550 o/p
+
+
+
+*DO WHILE LOOP*
+syntax -: do {
+  code block to be executed
+}
+while(condition);
+ex: 
+    let i = 1;
+let n = 8;
+do {
+    console.log(i)
+    i++;
+}while(i<=n);
+output:-  1,2,3,4,5,6,7,8
+
+While a variable is less than 10, log it to the console and increment it by 1:- DO WHILE
+ *FOR LOOP*
+ syntax -:
+ for (condition){
+  code to be executed
+ }
+ ex- for(let i = 0; i<=10; i++){
+  console.log("heyjs")
+    console.log(i)
+
+ }
+it will print heyjs 11 times 
+0,1,2,3,4,5,6,7,8,9,10
+ //ex: if we want to skip specific no. in counting then 
+ for(let i=0; i<=10 ;i++){
+  if(i==8){
+    continue;
+  }
+  console.log(i)
+ }
+ 0,1,2,3,4,5,6,7,9,10
+//ex : if we want to break in counting then
+for(let i=0; i<=10 ;i++){
+  if(i==8){
+    break;
+  }
+  console.log(i)
+ }
+o/p : 0,1,2,3,4,5,6,7
+ ODD EVEN LOOP
+ for(let i = 1; i<= 12; i++){
+    if(i%2 === 0){
+     console.log( i +  "is even " )
+        
+    }
+     else if(i%2 != 0){
+         console.log( i +  "is odd ")
+     }
+ }
+
+ for (var i = 0; i<5 ;i++){
+    let n = "my name is js"
+    console.log(n+"jghg")
+} => my name is jsjghg
+
+||
+
+ FOR ARRAY LENGTH
+ Let arr = [78,98,7,34,12,9,5]
+for (let i =0; i<= arr.length; i++)
+    {
+        console.log(arr[i])}
+VM956:4 78
+
+
+
+
+NESTED LOOP
+how to use break for inner nested loop
+for (let counter= 0 ; counter<=10; counter++){
+  document.write(counter);
+  document.write(<br/>)
+  for(let counter2 = 1; counter<3 ; counter2++){
+    if(counter == 3){
+      break;
+    }
+  }
+
+
+}
+for outer loop:
+for (let counter= 0 ; counter<=10; counter++){
+if(counter == 3){
+      break;
+    }
+  document.write(counter);
+  document.write(<br/>)
+  for(let counter2 = 1; counter 2 <3 ; counter2++){
+    document.write("js")
+  }
+}
+
+case: when want to apply break in outer loop but apply break property in inner property
+ outer:for (let counter= 0 ; counter<=10; counter++){
+
+  document.write(counter);
+  document.write(<br/>)
+  for(let counter2 = 1; counter2 <3 ; counter2++){
+    if(counter == 3){
+      break outer;
+    }
+    document.write("js")
+  }
+
+}
+
+*FUNCTION to interact with user : alert,prompt,confirm
+alert: show a message
+ex:alert("welcome js")
+
+prompt: show a message,input text .it returns the text on ok or , if cancel
+button or  ESC is clicked null.
+prompt("welcome js") //for input msg
+ex: let age = prompt("welcome js");
+   if(age != null){
+    return('your age is ${age}');
+   } else{
+    return('your age was blank');
+   }
+ 
+confirm: show a message confirm with "ok" or "cancel". it returns true  for "ok" and false for cancel/ESC.
+
+*TYPE CONVERSION*
+1.typeof [to findout type of value]
+ex- let a = "this is js tutorial";
+alert(typeof a);
+o/p - string
+ let a = 32;
+alert(typeof a);
+o/p - number
+ let a = true;
+alert(typeof a);
+o/p - boolean
+ let a 
+alert (typeof a);
+o/p - undefined
+let type = 5+null;
+console.log(type);
+console.log(typeof type) 
+o/p -5
+number
+let type = "5"+null;
+console.log(type);
+console.log(typeof type) 
+o/p -5null [here js took null value into 0 and converts into styring and added 5 with that so value comes as string form]
+string
+let type = "5"+ 2;
+console.log(type);
+console.log(typeof type) 
+o/p -52
+string
+NOTE :- "+" plus operator work for adding both string and number so thats why it coverts number and string accordingly but "-" sign is working only for "-"
+let type = "5"- 2;// here js converts 5 as number because of "-" sign
+console.log(type);
+console.log(typeof type) 
+o/p: 3
+number
+let type = "5"*2;
+console.log(type);
+console.log(typeof type) 
+0/p : 10
+number
+let type = "5"+ "2";
+console.log(type);
+console.log(typeof type) 
+o/p: 10
+number
+let type = "5"+ "jsx";
+console.log(type);
+console.log(typeof type) 
+0/p: NaN[firstly it converts 5 as number because of * sign but for "jsx" its unable to find out type so it gives result as its not a number type]
+how to convert (string number and boolean)
+MeThoD FOR tyPe CoNveRsioN
+a) String()
+b) Number()
+c) Boolean()
+
+1.let a = 22;
+console.log(typeof a); => number
+here we convert number value into string
+let NewType = String(a);
+console.log( typeof NewType); => string
+
+let a = false;
+console.log(typeof a); =>Boolean
+let NewType = String(a);
+console.log( typeof NewType); => string
+
+ 2.let a = "32";
+console.log(typeof a); =>string
+let NewType = Number(a);
+console.log( typeof NewType); =>Number
+ 
+let a = "hello";
+console.log(typeof a); =>string
+let NewType = Number(a);
+console.log(NewType) =>NaN
+console.log( typeof NewType); =>Number
+ 
+let a = true;[in boolean true -> 1 false -> 0]
+console.log(typeof a); => Boolean
+let NewType = Number(a);
+console.log(NewType) => 1
+console.log( typeof NewType) => Number
+
+3. let type = 0;
+console.log(typeof type); => Number
+let NewType = Boolean(type); 
+console.log( typeof NewType) => Boolean
+
+let type = "";
+console.log(typeof type); => string
+let NewType = Boolean(type); => false
+console.log( typeof NewType) => Boolean
+
+let type = "hello js";
+console.log(typeof type); => string
+let NewType = Boolean(type); => true
+console.log( typeof NewType) => Boolean
+
+*STRING MANIPULATION*
+Ex- let str = "this is your code";
+let greet = `Hello js ${str}`;
+console.log(greet); => Hello js this is your code
+For Escape special character in sentence
+Ex-  let str = "hello js \"this is code"
+console.log(str); =>hello js"this is code
+How to find No of characters:
+let str = "javascript is high level language";
+console.log(str.length); => 33
+How to find Specific letter in any words
+ let str = "javascript is high level language";
+console.log(str[4]); => s
+ConcateNation of Two StriNgS: 1st Method
+Ex - let str = "Array";
+let str2 = "object";
+console.log(str + str2)  =>Arrayobject
+Diff
+let str = "Array";
+let str2 = "object";
+console.log(str + " " +str2);  =>Array object
+Ex- let str = "Array";
+let str2 = "object";
+console.log(str + " is " +str2); => Array is object
+2nd Method of Concatenation
+let str = "hey";
+let str2 = "js";
+let str3 =  str.concat(str2);
+console.log(str3) =>heyjs
+for space between these
+let str = "hey";
+let str2 = "js";
+let str3 =  str.concat(" ", str2);
+console.log(str3); => hey js
+
+SubSTR METHOD FOR FINDING SPECIFIC LINE IN ANY SENTENCE(substr):
+let str = "js is high level programming language";
+let substring = str.substr(11,17);   //substr(index counting is first parameter start from 0 , length counting start from 1)
+console.log(substring); =>level programming
+subString method :
+substring(index,position)
+let str = "js is high level programming language";
+let substring = str.substring(18,28); 
+console.log(substring) =>rogramming
+INDEX OF METHOD : (for find position of words in a sentence)
+let str = "js is programming";
+let tree = str.indexOf("is");
+console.log(tree); =>3
+LASTINDEXOF METHOD
+let str = "js is programming";
+let tree = str.lastIndexOf("i");
+console.log(tree); =>14
+$for Adding that letter which is not avaialable in whole sentence*
+let str = "js is programming";
+let tree = str.lastIndexOf("iss");
+console.log(tree); => -1[it will show -1 means this letter is not exist (available) in whole sentence so it shows -1 as value]
+
+
+StRing CoMparsiON :-
+Ex -  let js = "Javascript";
+ if("Javascript" == js){
+     console.log("right")
+ }else {
+     console.log("wrong")
+ }
+ result => right
+ Case sensitive comaprison in string of js
+ let js = "Javascript";
+ if("javascript" == js){
+     console.log("right")
+ }else {
+     console.log("wrong")
+ }
+ result => wrong
+REMOVING EXTRA WHITESPACE IN SENTENCE : - (skip) (trim() removes whitespace from both sides of a string:
+)
+a) trim()
+let res = "   hello js code   ";
+res.trim(); => "hellojscode"
+b) trimEnd()
+let res = "   hello js code   ";
+res.trimEnd(); => "   hellojscode"
+c) trimStart() 
+let res = "   hello js code   ";
+res.trimStart(); => "hellojscode  "
+ FOR CAPITALIZATION 
+  let res = "its our workspace in vs code";
+  let tree= res.toUpperCase();
+ console.log(tree); => ITS OUR WORKSPACE IN VS CODE
+FOR SMALL CHARACTER:
+let res = "its our workspace in vs code";
+  let tree= res.toLowerCase();
+ console.log(tree); => its our workspace in vs code
+FOR REPLACE :
+let res = "its our workspace in vs code";
+  let tree= res.replace('our','best');[its replace our and added best]
+ console.log(tree); =>its best workspace in vs code
+
+FOR INCLUDES:
+let text = "Hello world, welcome to the universe.";
+let result = text.includes("world");
+console.log(result); => true
+let text = "Hello world, welcome to the universe.";
+let result = text.includes("is");
+console.log(result); => False
+ARRAY:
+ let sub = ["digital","VLSI","Network","R&D"];
+ console.log(sub)=>(4)=> [ 'digital', 'VLSI', 'Network', 'R&D' ]
+for update array value or add any new value
+ let sub = ["digital","VLSI","Network","R&D"];
+ sub[2]="communication system"
+console.log(sub);
+[ 'digital', 'VLSI', 'communication system', 'R&D' ]
+OPERATION ON ARRAY:
+how to find length of an array
+ let sub = ["digital","VLSI","Network","R&D"];
+ console.log(sub.length); =>4
+
+PUSH METHOD IN ARRAY -The push() method adds new items to the end of an array.
+let sub = ["digital","VLSI","Network","R&D"];
+sub.push("Environment")
+ console.log(sub); => [ 'digital', 'VLSI', 'communication system', 'R&D','Environment' ]
+
+POP METHOD IN ARRAY:The pop() method removes (pops) the last element of an array.
+let sub = ["digital","VLSI","Network","R&D"];
+sub.pop();
+console.log(sub); => [ 'digital', 'VLSI', 'communication system', 'R&D' ]
+
+UNSHIFT METHOD :The unshift() method adds new elements to the beginning of an array.
+let sub = ["digital","VLSI","Network","R&D"];
+sub.unshift("maths","ED") ;
+console.log(sub); =>[ 'maths', 'ED', 'digital', 'VLSI', 'Network', 'R&D' ]
+
+SHIFT METHOD: The shift() method removes the first item of an array.
+let sub = ["digital","VLSI","Network","R&D"];
+sub.shift() ;
+console.log(sub); => [ 'VLSI', 'Network', 'R&D' ]
+
+SPLICE METHOD: The splice() method adds and/or removes array elements. array.splice(index(position),elements)[indexing counting from 1]
+let sub = ["digital","VLSI","Network","R&D"];
+sub.splice(1,2) ; [it means remove 2 elements from position 1];
+console.log(sub); =>[ 'digital', 'R&D' ]
+FOR EMPTY ARRAY :
+let sub = ["digital","VLSI","Network","R&D"];
+sub.length = 0; 
+console.log(sub); => []
+Arrayis.Array METHOD [*HOW TO CHECK VARIABLE IS ARRAY OR NOT *]
+let name = ["hindi","english","science","geogRaphy","maths"]
+console.log(Array.isArray(name));
+result => true;
+let name = "history";
+console.log(Array.isArray(name));
+result => false;
+SPLIT METHOD [to convert text into array];
+let word = "this is high level programming language";
+let resword = word.split(' ')
+console.log(resword) =>(6) ['this', 'is', 'high', 'level', 'programming', 'language']0: "this"1: "is"2: "high"3: "level"4: "programming"5: "language"length: 6]
+ex-let word = "this is high level programming language";
+let resword = word.split(' s') 
+console.log(resword) =>[ 'thi', ' i', ' high level programming language' ]
+*JOINT METHOD*
+let subject = ["information theory", "signal processing", "network analysis","electromagnetic theory"]
+ let newsub = subject.joint("");
+ console.log(newsub); =>informationtheorysignalprocessingnetworkanalysiselectromagnetictheory
+let subject = ["informationtheory", "signalprocessing", "networkanalysis","electromagnetictheory"];
+ let newsub = subject.join("-");
+ console.log(newsub); =>informationtheory-signalprocessing-networkanalysis-electromagnetictheory
+
+*HOW TO ADD MULTIPLE ARRAY*
+let arr = [56,45,78,232,12,43,89];
+let res = [8,54,65,23,12,67,88,32];
+let arr2 = arr.concat(res);
+console.log(arr2); => [ 56, 45, 78, 232, 12, 43, 89, 8, 54, 65, 23, 12, 67, 88, 32 ]
+let arr = [56,45,78,232,12,43,89];
+let res = [8,54,65,23,12,67,88,32];
+let sub = [77, 23,11];
+let arr2 = arr.concat(res,sub);
+console.log(arr2); =>[ 56, 45, 78, 232, 12, 43, 89, 8, 54, 65, 23, 12, 67, 88, 32, 77, 23, 11 ]
+
+*MULTIDIMENSIONAL ARRAY*
+ex- let book = ["hindi","maths","sanskrit","history"];
+ let book2 = [
+    ["math" , "800"],
+    ["hindi" ,"400"],
+    ["history","222"]
+ ];
+ console.log(book2[1][0]); => hindi;
+ ex-2let book = ["hindi","maths","sanskrit","history"];
+ let book2 = [
+    ["math" , ["js","45"]],
+    ["hindi" ,"400"],
+    ["history","222"]
+ ];
+ console.log(book2[0][1][0]); => js;
+
+
+ *LOOP THROUGH ARRAY*
+  let book = ["hindi","maths","sanskrit","history"];
+ let booklength = book.length;
+ for (let i = 0; i < booklength; i++ ){              //given i = 0 because inedxing start form 0 in loop
+  console.log(`element ${i} is ${book[i]} \n`)
+ } =>element 0 is hindi 
+
+element 1 is maths 
+
+element 2 is sanskrit 
+
+element 3 is history  //OR
+
+*for Each () method :* -
+  let book = ["hindi","maths","sanskrit","history"];
+  book.forEach(data):
+  function data (val){
+    cosnole.log(val)
+  
+
+  *FUNCTION*
+  A JavaScript function is a block of code designed to perform a particular task.
+ex - function myFunc(){
+  for (i= 1; i<= 10 ; i ++){
+    console.log(i*2)
+  }
+}
+myFunc(); => 2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+*PARAMETER AND ARGUMENTS IN FUNCTION *
+Parameter is the variable in the declaration of the function.
+Argument is the actual value of this variable that gets passed to the function.
+
+HOW TO ADD MULTIPLE PARAMTER BY FUNCTION:
+ function add (num1 , num2){
+  document.write(num1+ num2)
+ }
+ add(4,8) =>12
+
+THE ARGUMENTS FUNCTION -:
+for Length
+function sub (){
+  console.log(arguments.length)
+}
+sub(9,2,5); =>arguments 3
+sub(5,2,3,9) => arguments 4
+ for all array -:
+ function sub (){
+  console.log(arguments)
+}
+sub(9,2,5);
+sub(1,9,7,6); => [Arguments] { '0': 9, '1': 2, '2': 5 }
+[Arguments] { '0': 1, '1': 9, '2': 7, '3': 6 }
+For Second Element -:
+  function sub (){
+  console.log(arguments[1])
+}
+sub(9,2,5); =>2
+ 
+ function sub (){
+  console.log(arguments[4])
+}
+sub(9,2,5);
+we can store function by variable and call them like
+let addition = sub;
+addition();
+
+RETURN IN FUNCTION :
+function add (a,b){
+  console.log(a+b)
+}
+add(5,9)=> 14
+
+function add (a,b){
+  return(a+b);
+}
+ let c = add(5,9);
+ console.log(c); =>14
+*GLOBAL VARIABLE VS LOCAL VARIABLE 
+Inside a function or a block: Local variables
+Outside of all functions: Global variables
+let car = "BMW"; //Global variable
+fucntion add (){
+  let result = 33; //Local Variable
+  console.log(result)
+}
+ex -1 :  function add () {
+  let result = 33;
+  console.log(result);
+}add()=>  33;
+ function  sub () {
+  let result = 23;
+  console.log(result);
+} sub() => 23
+
+*ANONYMOUS FUNCTION *
+Anonymous Function is a function that does not have any name associated with it. and use for one line of code
+//Function expression
+ex- let show = function (){
+  console.log("hello world")
+};
+show();
+
+SETTIMEOUT()
+The setTimeout() method executes a block of code after the specified time. The method executes the code only once.
+Syntax -setTimeout(function, milliseconds);
+function - a function containing a block of code
+milliseconds - the time after which the function is executed
+ex- function greet() {
+    console.log('Hello world');
+}
+
+setTimeout(greet, 3000); => Hello javascript will display after 3 seconds.
+IMMEDIATE INVOKED FUNCTION:-
+ (function(){
+  console.log("hello js")
+ })();
+ex: (function() 
+{ console.log("Welcome to GFG!"); 
+})();
+Welcome to GFG!
+
+*OBJECT IN JS*
+JavaScript object is a non-primitive data-type that allows you to store multiple collections of data.
+Object values are written as name : value pairs (name and value separated by a colon).
+ex: let person = { //DOT NOTATION
+  name: 'Harry potter';
+  role: 'James Bond';
+}
+console.log(person.name); =>Harry potter
+2nd Method (ARRAY NOTATION):
+let person = {
+  name: 'Harry potter',
+  role: 'James Bond'
+}
+console.log(person['name']); =>Harry potter
+ex-2 let person = {
+  name: 'Harry potter',
+  role: 'James Bond'
+}
+console.log(person); =>{ name: 'Harry potter', role: 'James Bond' }
+Modify Value in object
+let person = {
+  name: 'Harry potter',
+  role: 'James Bond'
+}
+person.name = 'angularjs';
+console.log(person.name);  =>angularjs
+HOW TO ADD NEW PROPERTY IN OBJECT :-
+let person = {
+  name: 'Harry potter',
+  role: 'James Bond'
+}
+person.age = 25;
+HOW TO DELETE PROPERTY IN OBJECT :-
+delete person.role; =>{ name: 'Harry potter' }
+FOR FIND ANY PROPERTY:
+let person = {
+  name: 'Harry potter',
+  role: 'James Bond'
+}
+console.log('age'in person); =>false
+let person = {
+  name: 'Harry potter',
+  role: 'James Bond'
+}
+person.age = 22;
+console.log('age'in person); =>true
+
+ITERATE PROPERTY IN OBJECT THROUGH FOR IN LOOP:
+let person = {
+  name: 'Harry potter',
+  role: 'James Bond'
+}
+person.age = 23;
+for (let key in person) //its same as for loop but the diff is only using in operator here so its known as for in loop
+{
+  console.log(key);
+}
+
+
+
+
+
+*TRY AND CATCH IN JS*
+try {
+  Block of code to try
+}
+catch(err) {
+  Block of code to handle errors
+}
+
+*MATH OBJECT*
+ console.log(Math.PI) =>3.141592653589793
+  console.log(Math.E) =>2.718281828459045
+Math.round Method->For Round Up
+var x= Math.round(4.7)
+console.log(x) => 5
+var x = Math.round(4.2)
+console.log(x) => 4
+Math.ceil()
+The Math.ceil() method rounds a number rounded UP to the nearest integer.
+var x= Math.ceil(4.9)
+console.log(x)=> 5
+ 
+
+
+Todays example
+let x= "54"
+parseInt(x) => 54
+let x ="-45"
+parseInt(x) => -45
+let x = "45"
+Math.abs(x) => 45
+let x = "-45"
+Math.abs(x) => 45
+
+EVENTS IN JS
+1.onClick
+2.onSubmit
+3.onmouseover
+4.onmouseout
+5.ondblclick
+6.onfocus	
+7.onformchange
+8.onkeypress	
+9.onkeydown
+10.onpageshow
+11.onscroll
+12.Offline /onoffline
+13.oncanplay
+14.onchange
+15.onformchange
+16.onforminput
+17.onhaschange
+18. oninvalid
+19.onload
+20.onloadeddata
+21.onmessage
+22. onloadstart
+23.onmousedown
+24.onmousemove
+25.onmouseup
+26. ononline
+27.onplay
+28.onprogress
+29.onscroll
+30. onstorage	
+31. onsuspend
+32.onunload	
+33.onwaiting
+34. onvolumechange
+35. setTimeout()  
+36. onContextmenu
+
+Global Variable: Outside of all the functions
+Local Variable: Within a function block:
+
+
+
+ 
+ 
+15/11/22
+FOR LOOP : - i<= MEANS value print in one step above 
+
+
+
+30/11/22
+ARRAY  : 
+1. CONSTRUCTOR PROP.
+var a = [78,89,56]
+var c  = a.constructor
+console.log(c)
+=> [Function: Array]
+
+
+1. LENGTH
+var a  = [5,7,3,2,3]
+var c  = a.length
+console.log(c) =>5
+
+2.CONCAT - (ADDING VAL AND ELEMENT)
+ var arr  = [8,4,6,2,2,7,4]
+ var arr2  =[7,4,3,2,3,4,2]
+ let newv = [8.9,9,5,3,2,1]
+ let vals = arr.concat(arr2,newv)
+ console.log(vals)
+ 
+ 3.JOIN 
+ var arr = [4,3,6,3,23,43,53]
+let new  = arr.join("-")
+console.log(new)
+
+4. toString()
+ var arr  = ["8","4","6","2","2","7","4"]
+ let vals  = arr.toString()
+ console.log(vals)
+ 
+5.Sort()
+var val  = [3,2,1,5,8,9]
+let val2 = val.sort()
+console.log(val2)
+var val  = [3,2,1,5,8,9,"hello","your","js"]
+let val2 = val.sort()
+console.log(val2)
+
+
+6.POP ()
+const val  = ["new ", "val", "yourebd","husegy"]
+val.pop()
+console.log(val)
+
+
+7. PUSH ()
+var val  = [9,34,53,23,5]
+val.push(90)
+console.log(val)
+
+const val1  = [9,34,53,23,5]
+ let val2 = val1.push()
+console.log(val2)
+
+
+8. SHIFT ()
+var val  = [9,34,53,23,5]
+val.shift()
+console.log(val)
+
+const val1  = [9,34,53,23,5]
+ let val2 = val1.shift()
+console.log(val2)
+
+9. UNSHIFT()
+var val  = [9,34,53,23,5]
+val.unshift(65)
+console.log(val)
+
+const val1  = [9,34,53,23,5]
+ let val2 = val1.unshift(98)
+console.log(val2)
+
+*/
+Question on loop : 
+
+
+let val  = ""
+for(let i=10;i>=1;i--){
+
+    for(let j=1;j<=i;j++){
+        val  += j
+    }
+   val +="\n" 
+}
+ console.log(val) 
+
+ 12345678910
+ 123456789
+ 12345678
+ 1234567
+ 123456
+ 12345
+ 1234
+ 123
+ 12
+ 1
+ Q.2 
+ let val  = ""
+for(let i=1;i<=10;i++){
+
+ for(let j=1;j<=i;j++){
+     val  += "*"
+ }
+val +="\n" 
+}
+console.log(val) 
+node /tmp/99aMfvCHnb.js
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+Q.3 
+let val  = ""
+for(let i=1;i<=5;i++){
+
+for(let j=1;j<=i;j++){
+    val  += "*"
+}
+val +="\n" 
+}
+console.log(val) 
+node /tmp/99aMfvCHnb.js
+*
+**
+***
+****
+*****
+

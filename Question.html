@@ -1,0 +1,1671 @@
+ 
+Q.1) Write a program to Using JavaScript switch statement to get the day of the week .
+var day = 1
+ var day ; 
+ switch (day){
+    case 1 : 
+    console.log ('MONDAY')
+    break;
+     case 2:
+    console.log  ('TUESDAY')
+        break; 
+     case 3 :
+     console.log  ('WEDNESDAY')
+     break;
+     case 4:
+         console.log  ('THURSDAY')
+     break;
+     case 5:
+       console.log  ('FRIDAY')
+     break; 
+     case 6:
+       console.log  ('SATURDAY')
+     break;
+     case 7:
+       console.log  ('SUNDAY')
+     break; 
+     default:
+     console.log( "no val")    
+ }
+
+ Q.2  Write a program to using if-else statement ,Find the grade for input marks:
+ - Print “S grade” if marks is between 90 and 100.
+ Print “A grade” if marks is between 80 and 90.
+ Print “B grade” if marks is between 70 and 80.
+ Print “C grade” if marks is between 60 and 70.
+ Print “D grade” if marks is between 50 and 60.
+ Print “E grade” if marks is between 40 and 50.
+ Print “Student has failed” if marks is between 0 and 40.
+ Else print “Invalid marks”.
+ sol: -
+ var marks = 35 
+ if(marks>=90 && marks<=100)
+     {
+       console.log("S grade")
+     } 
+     else if ( marks>=80 && marks<=90)
+     {
+       console.log("A grade")
+     }
+       else if ( marks>=70 && marks<=80)
+        {
+       console.log("B grade")
+ 
+     }
+     else if ( marks>=60 && marks<=70)
+        {
+       console.log("C grade")
+     }
+     else if ( marks>=50 && marks<=60)
+        {
+       console.log("D grade")
+ 
+     }
+     else if ( marks>=40 && marks<=50)
+        {
+       console.log("E grade")
+ 
+     } else if ( marks>=0 && marks<=40)
+        {
+       console.log("Student has failed")
+ 
+     } else {
+       console.log("Invalid marks")
+  
+     }
+     
+ Q. 3 write a program to Find the largest of three number using if else statement .
+     sol :
+     var x, y , z
+x = 67 ;
+y = 87 ; 
+z =55 ;
+if (x>y && x>z){
+    console.log("value of x is greater")
+} else if (y>x &&  y >z) {
+     console.log("value of y is greater")
+   
+} else if (z>x && z>y) {
+        console.log("value of z is greater")
+
+} else{
+  console.log("wrong value")  
+}
+
+Q . 4 write a program to Find the a number is present in given range  using if else statement .
+sol 
+const start = 5
+const end = 9
+const range = 7
+
+    if(range > start && range < end) {
+        console.log("range is available between start and end.")
+    } else {
+        console.log("range is  not available between start and end")
+    }
+
+ Q .5)Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result. The Number is(x=4,y=7,z=2)
+
+sol.
+var x =  4;
+var y = 7 ;
+var z = 2;
+ if (x>y && x>z){
+     if(y>z){
+         console.log(x , y , z)
+     } else {
+         console.log(x, z ,y)
+     }
+ } else if (y>x && y>z){
+     if(x>z){
+         console.log(y, x , z)
+     } else {
+         console.log(y ,z  , x)
+     }
+ } else if (z>x && z>y)
+ {
+     if (x>y){
+         console.log(z ,x , y)
+     } else {
+         console.log(z , y , x)
+     }
+ }
+ else {
+     console.log("wrong val")
+ }
+		
+Q. 6 Write a program to print Even numbers in given array using for loop .
+array = [13,23,12,45,22,48,66,100]
+ sol : const array = [13,23,12,45,22,48,66,100] 
+for (let i = 0 ; i<array.length; i++){
+    if(array[i]%2 === 0){
+        console.log("its a even no. " + array[i])
+    }
+}
+
+ Q. 7 Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.
+sol :  var a = 12;
+var b  = 12;
+if (a=== b ){
+    console.log(3*(a+b))
+} else {
+    console.log(a+b)
+}
+
+Q.8 Write a program to print a pattern using for loop .
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+1 2 3 4 5 6 
+1 2 3 4 5 6 7 
+1 2 3 4 5 6 7 8 
+
+sol: 
+let val = "";
+for (let i = 1; i<=9 ; i++){
+    for (let j =i ;j<=i; j++){
+       val = val + j    
+    }
+   
+    console.log(val)
+}
+
+ Q.9 Write a program to find the power of a given number using for loop .
+ Sol : - let val = 5
+ for (let i = 0 ; i<=val ; i ++){
+     if(i ==val) {
+         console.log(i*i)
+     }
+ }
+
+
+Q.11  write a program to given a variable, num. Your task is to print using switch case:
+- ONE, if num is equal to 1.
+- TWO, if num  is equal to 2.
+- THREE, if num is equal to 3.
+- FOUR, if num is equal to 4 .
+- FIVE, if num is equal to 5 .
+- SIX, if  num is equal to  6.
+- SEVEN, if num is equal to 7.
+- EIGHT, if  num is equal to 8.
+- NINE, if num is equal to 9 .
+- PLEASE TRY AGAIN, if num is none of the above.
+
+ sol : var num = 6
+switch(num){
+    case 1 : 
+      console.log("ONE")
+       break;
+       case 2: 
+        console.log("TWO")
+        break;
+        case 3: 
+        console.log("THREE")
+        break;
+        case 4: 
+        console.log("FOUR")
+        break; 
+        case 5: 
+        console.log("FIVE")
+        break;
+         case 6: 
+        console.log("SIX")
+        break;
+        case 7: 
+        console.log("SEVEN")
+        break;
+      case 8: 
+        console.log("EIGHT")
+        break;
+         case 9: 
+        console.log("NINE")
+        break;
+        default:
+        console.log("PLEASE TRY AGAIN")   
+}
+
+Q. 12  Write a program to Using JavaScript switch statement to get the current day of the week .
+ sol : const day = new Date().getDay();
+switch (day){
+    case 1 : 
+    console.log ('MONDAY')
+    break;
+     case 2:
+    console.log  ('TUESDAY')
+        break; 
+     case 3 :
+     console.log  ('WEDNESDAY')
+     break;
+     case 4:
+         console.log  ('THURSDAY')
+     break;
+     case 5:
+       console.log  ('FRIDAY')
+     break; 
+     case 6:
+       console.log  ('SATURDAY')
+     break;
+     case 7:
+       console.log  ('SUNDAY')
+     break; 
+     default:
+     console.log( "no val")    
+ }  
+
+ Q.13 )write a program to Our application will output the four seasons with the following specifications for simplicity using switch case:
+ Winter: January, February, and March
+ Spring: April, May, and June
+ Summer: July, August, and September
+ Autumn: October, November, and December
+ sol : 
+ var month = new Date().getMonth();
+
+switch (month){
+    case 1 :
+         case 2:
+              case 3:
+    console.log ('Winter')
+    break;
+     case 4:
+         case 5:
+            case 6:
+         console.log  ('Spring')
+     break;
+          case 7:
+                 case 8:
+                      case 9:
+       console.log  ('Summer')
+             break;
+            case 9:
+              case 10:
+                  case 11:
+       console.log  ('Autumn')
+     break; 
+     default:
+     console.log( "no season is here")    
+ } 
+ 
+ Q .14 Write a JS code to find the largest number in an array.
+array = [2, 45, 3, 67, 34, 567, 34, 345, 123]
+
+sol : - var array = [2, 45, 3, 67, 34, 567, 34, 345, 123];
+let number = array[0]
+
+for (var i = 0; i < array.length; i++) {
+    if (number < array[i] ) {
+        number = array[i];
+    }
+}
+console.log(number);
+
+Q.19 Write a JavaScript program which prints the elements of the following array.
+Sample array :
+  array = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+sol :  
+ const  array = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]; 
+for(let i = 0 ; i<array.length; i++){
+    console.log("val" +i)
+    for(let j=0;j<array[i].length; j++){
+       console.log(""+array[i][j])  
+    }
+}
+
+Q.20 Write a JavaScript program to compute the sum and multiplication of an array of integers
+const arr =  [13, 2, 3, 40, 56, 6,8,20]
+var sum = 0
+var multiple = 1
+for (let i = 0 ; i<arr.length; i++){
+    sum =sum+arr[i]
+    multiple = multiple*arr[i]
+}
+console.log(sum)
+console.log(multiple)
+
+
+
+
+TODAYS QUESTIONS ?
+Q.26 Write a JavaScript program to sum the multiples of 3 and 5 under 100.
+sol: var sum =  0
+for (let i = 1 ; i<100; i++){
+    if(i%3==0||i%5==0){
+        sum = sum+i  
+    }
+}
+      console.log(sum)    
+
+Q. 30 write a program to determine if a student passed or failed in the exam based on marks obtained marks is grater then 40 return passed using ternary operator
+sol: var marks =  40;
+val=  marks>=40 ? "passed" : "fail"
+ console.log(val)
+
+ Q. 23 Write a JavaScript function to find an array contains a specific element.
+ sample array:-  [2, 5, 9, 6,8,3];
+ for example:-
+ 1)console.log(contains(array, 5));
+ output:- True
+ 2)console.log(contains(array, 4));
+ output:- false
+
+ Sol:  var array =[2, 5, 9, 6,8,3]
+ function contain (array,z){
+     for(let i=0; i<array.length; i++){
+         if(array[i]===z){
+             console.log("true")
+             }
+             else{
+                 console.log("false")
+             }
+     }
+     }
+ contain(array,5)
+ Q.31  Write a program to using Ternary Operator,Find the num for input num:
+ Sol:
+ var num = 56
+ val1 = (num<=40) ? "The result is not satisfactory" :
+ (num<=60) ? "The result is in an average" :
+ (num<=80) ? "The result is Good" :
+ "The result is Excellent..."
+ console.log(val1)
+
+ 
+
+Q.17 
+write a program to print Triangle pattern in JavaScript .
+output:-
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+sol:  let number = 5 
+let num1 = ""
+for (let i = 1  ; i<=number; i++){
+   for (j = 1; j<=i; j++) {
+      num1 = num1+ i 
+   }
+   num1 =num1+"\n"
+}
+console.log(num1)
+
+
+ 
+ Q.10 
+ 
+   
+ const  array = [23,56,4,78,5,63,45,210,56];
+ 
+ const newVal = array.filter(function(val1,val2)
+ {
+  return array.indexOf(val1)>=val2;
+ })
+ console.log(newVal)
+
+or 
+ 
+
+Q.40 Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen.
+Sample Output :
+"0 is even"
+"1 is odd"
+"2 is even"
+----------
+---------- 
+Sol : for (let i = 0 ; i<=15;i++){
+  if(i%2===0){
+      console.log("value is even" + i)
+  } else if(i%2 !== 0){
+      console.log("value is odd" + i)
+  }
+}
+
+Q.33 Write a JavaScript program which prints the elements of the following array.
+sample array:- [[1, 2, 1, 24],38, [8, 11, 9, 4], 23, 67, [7, 0, 7, 27],[7, 4, 28, 14], 12, 34]
+sol: const array= [[1, 2, 1, 24],38, [8, 11, 9, 4], 23, 67, [7, 0, 7, 27],[7, 4, 28, 14], 12, 34]
+for(let i =0;i<array.length;i++){
+          console.log("row"+ i)
+         if(array[i].length===undefined){
+       console.log(array[i])
+}
+else{
+     for(let j=0;j<array[i].length;j++){
+            
+            console.log(array[i][j])
+        }
+}
+
+}
+
+Q35)Write a JavaScript program to create a series and take input from the user .
+for example:- user type 5
+output:- A,AA,AAA,AAAA,AAAAA
+
+sol : 
+let x = 5
+let n = []
+for(let i=1; i<=x; i++){
+let value = "";
+  for(let j=i; j<=i; j++){
+    for(let k=1; k<=j; k++){
+      value += "A";
+}
+
+}
+n.push(value)
+}
+console.log(n)
+
+
+
+
+
+
+
+
+
+Q.37 Write a JavaScript program that accept two integers and display the larger.
+
+sol : 
+var val1 = 1
+var val2 = 7
+if(val1>val2) {
+    console.log(val1)}
+    else if (val2>val1) {
+        console.log(val2)
+    }
+
+TODAY : - 1/12/22
+
+Q. 41
+ sol : 
+ var newdate  = new Date()
+ var Newday = newdate.getDay()
+ var Days = ["Sunday", "Monday" ,"Tuesday", "wednesday" ,"Thursday","friday","saturday"]
+           
+ console.log("Today is: " + Days[Newday])
+ 
+ var Hours = newdate.getHours()
+ var Minutes= newdate.getMinutes()
+ var Second= newdate.getSeconds()
+ var SetHoursVal = (Hours>= 12) ? "PM" : "AM"
+ 
+ console.log("Current time is:" +Hours + ":" +  Minutes+ ":" + Second + SetHoursVal)
+ VM124:6 Today is: Thursday
+ VM124:13 Current time is:17:25:53PM
+ undefined
+
+Q.42 
+Sol: function printValue (){
+    window.print()
+}
+Q.43 
+ Sol :var date = new Date()
+
+    console.log(date.toLocaleString())
+
+Q.44 
+sol :
+function Leap (year){  
+    if (year%4 ===0 && year%100 != 0) 
+  {
+    console.log("its a leap year")
+  } 
+  else if (year%400 === 0){
+
+    console.log("its a leap year")
+
+ } else 
+ {
+    console.log("its not a leap year" )
+ } 
+  }
+  console.log(Leap(2020))
+
+
+Q. 49
+ sol: function newVal (val1,val2) {
+    let val = val1*val2 
+   let final = val1%val2
+    
+   console.log(val)
+   console.log(final)
+    
+ }
+ newVal(2,3)
+
+Q. 53
+sol:
+function userValue(a){
+    if(a>13){
+        console.log(13-a)}
+        else{
+            console.log((13-a)*2)
+        }
+    }
+
+userValue(4)
+
+Q.52 
+sol: function fileName(data) {
+    const file = data.split(".").pop()
+    console.log(file)
+}
+fileName("system.php")
+
+Q. 54
+var x = 7
+var y= 4
+    if(x==y) {
+        console.log(3*(x+y))
+    } 
+    
+    else {
+        console.log(x+y)
+    }
+
+VM63:8 11
+undefined
+
+Q.56 
+let x = 20
+let y= 50
+    if((x== 50 || y== 50)||(x+y==50)) {
+        console.log(true)
+    } else {
+        console.log("no value ")
+    }
+
+Q.46 
+sol: - 
+let user = prompt("enter a no.")
+  let user2 = Math.floor(Math.random() *10);
+console.log(user)
+if(user===user2){
+    alert("Good luck")
+}
+    else {
+
+    alert("Not matched")}
+
+
+    
+  Q. 47
+  var day = 1
+ var day ; 
+ 
+ switch (day){
+    case 1 : 
+    console.log ('MONDAY')
+    break;
+     case 2:
+    console.log  ('TUESDAY')
+        break; 
+     case 3 :
+     console.log  ('WEDNESDAY')
+     break;
+     case 4:
+         console.log  ('THURSDAY')
+     break;
+     case 5:
+       console.log  ('FRIDAY')
+     break; 
+     case 6:
+       console.log  ('SATURDAY')
+     break;
+     case 7:
+       console.log  ('SUNDAY')
+     break; 
+     default:
+     console.log( "no val")    
+ }  
+
+Q.95 
+SOL: 
+var array1 = [1,0,2,3,4];
+var array2 = [3,5,2,4,12,13]
+let val  = []
+
+for(i= 0; i<(array1,array2).length; i++){
+   val.push((array1[i]+array2[i]))
+   console.log(val)
+}
+
+
+Q.
+var array = ["abc", "123", "xyz"]
+ var valstr = ""
+
+var val = 0
+for(let i = 0; i<array1.length; i++){
+    // i = 0; array1[i] = abc
+     if(array1[i].length > val){  
+                val = array1[i].length
+    }
+}
+
+<!-- let getArray = Math.max(...array.map(element =>  element.length)) -->
+
+for (let i= 0 ; i<getArray ;i++){
+    array.map((val1,val2) => {
+        if(val1[i]===undefined){
+           valstr = valstr + " " 
+        } else 
+        {
+           valstr = valstr +val1[i]
+        }
+        
+    })
+     
+}
+
+TODAY 5-12-22
+
+Q. 81 
+sol :
+
+function value(x,y){
+    let sum = x + y;
+
+if(sum>=50 && sum<=80){
+  console.log(65)
+} else {
+  console.log(80)
+}
+
+
+}
+value(15,65)
+Q.82
+sol: 
+function value(x,y){
+        if(x==8 ||y ==8  || x+y==8 || x-y ==8){
+            console.log ("satiesfied")
+        }  else {
+            console.log("wrong value")
+        }
+    
+    
+}
+value(3,5)
+
+Q.86
+sol: 
+function value(x,y){
+        if(x==15 ||y ==15 || x+y==15 || x-y ==15){
+            console.log ("satiesfied")
+        }  else {
+            console.log("wrong value")
+        }
+    
+    
+}
+value(10,5)
+
+
+
+Q.94
+sol:  
+function colors(){ 
+    let color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+let o = ["th", "st", "nd", "rd"];
+let newcolour;
+for(let i = 0;i<color.length; i++){
+  if(i==3){
+      break;
+  }
+   newcolour = color[i]
+//   console.log(newcolour)
+   }
+   let newVal;
+  for (let j = 1; j<o.length;j++){
+      newVal = o[j]
+    //   console.log(newVal)
+  } 
+   
+    let finalVal ;
+   for(let num= 1; num<=3. ; num++){
+     finalVal = num
+    // console.log(finalVal)
+    
+   }
+   
+const val6  = (finalVal+newVal +" choice is "+newcolour);
+
+console.log(val6)
+  
+}
+
+colors()
+
+Q. 90
+sol:  const value1 = "js resuorce is good for beginner";
+const value2= [9,7,6,5,22,654,3,2,4]
+let val = Array.isArray(value1)
+console.log(val)
+
+OR
+function getArrray (val) {
+    if(Array.isArray(val)){
+        console.log("this is array")
+    } else {
+        console.log("this is  not an array")
+    }
+    
+}
+getArrray("here is my first function of js series")
+
+
+Q. 75.76
+sol :function stringValue (x,y) {
+    console.log(x)
+      if(x.substring(2,4)===y){
+          console.log("yes")
+      } else {
+          console.log("no")
+      }
+       
+  }
+  console.log(stringValue("strings are not" , "strings"))
+  
+Q.49Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
+ sol : - <script type="text/javascript">
+    var a = parseInt(prompt("enter a first no."))
+    var b = parseInt(prompt("enter a second no."))
+    var multiplication = a *b ;
+    var division = a/b;
+     document.write("here is the your result " + multiplication )
+     document.write ("here is the your result " + division )  
+      </script>
+
+
+
+Q. 101 
+sol: - const  val = ["hello","html", "newcar","98","76"]
+var val1 = "";
+for(let i = 0; i<val.length; i++){
+   
+ if(val[i]>val1){
+     val1 = val[i]
+ }   
+}
+console.log(val1)
+
+Q. 102
+sol: function findEvenArray(array1) {
+    let array  = []
+    array1.sort((x) => x)
+    for (let i =0;array1.length;i++){
+        if(array1[i]%2==0){
+            array.push(array1[i])
+            console.log(array)
+        }
+    }
+  console.log(array);
+}
+findEvenArray([9,3,5,8,12])
+
+
+
+Q.122 
+sol: 
+
+
+function Array(val1, val2) {
+    const Array1 = [];
+    for ( let i = 0; i < val1.length; i++) {
+        if(val1[i] !== val2) {
+            Array1.push(val1[i]);
+        }
+    }
+    console.log(Array1)
+}
+const getVal = Array([1, 2, 3 , 4 , 5], 2);
+
+console.log(getVal);
+
+
+Q.125 
+sol:  const data = [8,5,3,2,6,4,3]
+ 
+const data1 = Math.max(...data)
+console.log(data1)
+   
+const data = [8,5,3,2,6,4,3]
+ 
+const data1 = Math.min(...data)
+console.log(data1)
+ 
+
+Q.136 
+sol:
+function Login() {
+    return Login.caller.name
+     
+ }
+ Login()
+ function NewVal(){
+     console.log(Login())
+ }
+ NewVal()
+
+ Q.130 
+ sol:  const data = [0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]
+ console.log(data.length)
+ 
+ const newVal  =  data.filter(function(val1,val2) {
+     return val1
+     
+ })
+ console.log(newVal)
+
+
+ Q.132 
+ sol: const data = "my JS tutorial is for arrays and filters"
+
+ if (data.toUpperCase()===data){
+     console.log("yes this value is in case of UPPERCASE")
+ } else {
+     console.log("this is not in case of  UPPERCASE")
+ }
+ console.log(data)
+
+Q.139 
+sol: const x = 5
+let data = 1
+for(let i = 1; i<= x; i++){
+ (//  loop init  i = 1; 1<8 => 1; 2<8=>2 ; 3<8 =3;
+ //1  =(1*2*3*4*5*6*7*8))
+    data =data*i
+}
+console.log(data)
+
+
+Q.142 
+sol: const word = "hello js first tutorial";
+const final = word.charAt(0);
+let final1 = final.toUpperCase()
+console.log(final1)
+
+
+Q. 145
+sol: <body>
+    <button onclick="Click()">click </button>
+  
+   <script type="text/javascript">
+  function Click () {
+  window.location.href = "https://danlevy.net/js-quiz-14-date-time-questions-test-your-knowledge";
+  }
+    </script>
+  </body>
+
+
+  Q.69 
+  sol : - function data(value1,value2) {
+    if(value1>= 50 && value1<=99 || value2>=50 && value2<=99){
+        console.log("true")
+    } else {
+        console.log("false")
+    }
+    
+}
+data (52,70)
+
+Q. 70 
+sol: - function threeValue(value1,value2,value3) {
+    if(value1>= 50 && value1<=99 || value2>=50 && value2<=99 ||value3>=50 && value3<=90){
+        console.log("true")
+    } else {
+        console.log("false")
+    }
+    
+}
+threeValue (52,70,87)
+
+6/12/22
+Q.36 
+sol: 
+function value(n) {
+    let val = (n>=0)? (n==0 ?"zero" : "positive") : "negative"
+    
+    console.log(val)
+}
+value(8)
+
+Q.21 
+sol: const array = [NaN, 0, 15, false, -22, '',undefined, 47, null, NaN, " ", undefined ,"hello",54 ]
+ 
+let val = array.filter(function(array1,index){
+    
+    return (
+       array1
+        )
+        })
+        for (let i= 0; i<=val.length; i++){
+            if(val[i]!== "hello"){
+                console.log(val[i])
+            }}
+
+
+Q.114)Write a JavaScript function to split a string and convert it into an array of words.
+sample data:- string_to_array("Robin Singh")
+output:-["Robin", "Singh"]
+sol :  function string_to_array(str1){
+     
+    const newVal =  str1.split(" ")
+    
+    console.log(newVal)
+}
+string_to_array("Robin Singh")
+
+
+
+Q.132 
+sol: 
+function value (string1){
+ 
+ if(string1.toUpperCase()==string1 ){
+     console.log("yes this is in Uppercase")
+ } else {
+          console.log("Not in Uppercase")
+
+ } 
+}
+
+value('HELLo')
+
+
+Q. 133
+Sol: function value (x,y){
+    if(x%y===0){
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+ }
+ value(6,2)
+
+
+Q113)Write a JavaScript function to split a string and convert it into an array of words.
+sol: - 
+
+function value(val){
+    let element = []
+    for(let i= 0; i<val.length;i++){
+        if(val[i]===val[i]){
+            element.push(val[i])
+        } else{
+            console.log("wrong value")
+        }
+    }
+   console.log(element) 
+ }
+ value("Hellojavascript")
+  
+
+QUESTION LIKE 132 AND OTHER LOGIC:
+IF A VALUE IS IN UPPERCASE AND SOME OF THEM IS IN LOWER AND THEIR LENGTH
+function value (string1){
+    let x  = []
+  for(i=0;i<string1.length;i++){
+     if(string1[i]==string1[i].toUpperCase()){
+        x.push(string1[i])
+     } 
+  }  
+    if(x.length!==0){
+         console.log(`this value is in UpperCase and No.of uppercase is ${x.length} `)  
+    }
+    else{
+        console.log("wrong value")
+    }
+ }
+ 
+ value('HELLO JAVASCRIPT HERE IS ECMASCRIPT CHAPTER')
+
+
+
+ Q.102 Write a JavaScript program to get the largest even number from an array of integers.
+ sol: const val = [56,9,8,3,2,7,4,31]
+ let n = []
+ let x = 0
+for(let i = 0; i<val.length; i++){
+    if(val[i]%2===0){
+        n.push(val[i])
+    }
+   for(let j = 0; j<n.length; j++){
+       if(n[j]>x){
+           x = n [j]
+       }
+   }
+}
+ console.log("These are the even no. " + n) 
+ console.log( x +  " is the larger even No. from all the above No.")
+
+Q. 110 Write a JavaScript function to get the number of days in a month.
+sol: function Numofdays(y,m) {
+    var data = new Date(y,m,0).getDate()
+     console.log(data)
+ }
+ Numofdays(2022,12)
+
+ Q. 123
+ sol- function randomInt(number){
+    const z = Math.floor(Math.random()*(number)*10)
+    console.log(z)
+  }  
+  randomInt(5)
+
+  Q.128 
+  sol: const val = [8,9,8,3,2,7,4,2,31]
+  let n = []
+      for (let i = 0;i<val.length;i++){
+          if (val.lastIndexOf(val[i]) === val.indexOf(val[i])) {
+       n.push(val[i]);
+     }
+         
+      }    
+       console.log(n)    
+      
+      
+      
+ Q.111 
+ sol: const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+ const d = new Date("5-13-2022");
+ const val = month[d.getMonth()]
+ console.log( `this month is ${val}`)
+
+<!-- Q. undefined -  added two array value by join method
+var arr  = [8,4,6,2,2,7,4]
+var arr2  = [9,53,8,8,92,2]
+let vals  = arr.concat(arr2).join("*")
+console.log(vals)
+
+
+Q undefined for sort 
+const val  = []
+var val2 = val.pop()
+console.log(val2) => undefined -->
+
+
+TODAY - 7/12/22
+Q.  16 
+sol: let x = '';
+for(let i=1; i<=5; i++){
+  for(let j=1; j<= 5 - i; j++){
+    x = x+ ' '
+  }
+  for(let k=1; k<=i; k++){
+    x =x + '*'
+  }
+  x = x + '\n'
+}
+console.log(x);
+VM73:13     *
+   **
+  ***
+ ****
+*****
+
+undefined
+Q.45
+sol: 
+let startYear = 2014;
+let endYear = 2050;
+
+for(let year = startYear; year <= endYear; year++){
+    var x = new Date(year, 0, 1)
+    if(x.getDay() === 0){
+        console.log(`1st January is being a Sunday ${year}`);
+    }
+}
+
+Q.60 
+sol: function ofString (val) {
+    if(val.substring(0,2)==="Py"){
+        console.log(val)
+    } else {
+        console.log(`Py${val}`)
+    }
+    
+}
+ofString("HelloJs")
+
+Q.62 
+sol : 
+function remove_String (val,y) {
+    
+    for(let i = 0; i<=val.length; i++){
+        if(i===y){
+            let x = val.replace(val[i],'')
+             console.log(x)
+        }
+    }
+   
+}
+remove_String("Python",5)
+
+
+
+Q.97 
+SOL:  const arr1 = [1,2,3]
+const arr2 = [100,2,1,10]
+const finalVal= [...arr1, ...arr2]
+let newval = finalVal.filter(function(item,index) {
+ return (
+     (finalVal.indexOf(item)===index)
+     )
+})
+console.log(newval)
+
+OR 
+const arr1 = [1,2,3]
+const arr2 = [100,2,1,10]
+const finalVal = [...arr1, ...arr2]
+let x = []
+
+let y = []
+for (let i = 0; i<finalVal.length; i++){
+    x.push(finalVal[i])
+for (let j = 0; i<x; j++)
+    if((indexOf(x[i]===j[i]))){
+        y.push(j[i])
+        console.log(y)
+    }
+    }
+    console.log(x) [find sol ]
+
+Q.96 
+const val  = [1, [2], [3, [[4]]],[5,6]]
+const val2 = val.flat(3)
+console.log(val2)
+VM929:3 (6) [1, 2, 3, 4, 5, 6]
+OR 
+let arr = [1, [2], [3], [[[4]]],[5,6]]
+ 
+let val = ''
+function flatten(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if(Array.isArray(arr[i])){
+      flatten(arr[i])
+    }else{
+      val += arr[i]
+    }
+  }
+  return val
+}
+console.log(flatten(arr))
+
+Q.119
+sol :let number = 12345;
+let reverse = parseInt(number.toString().split('').reverse().join(''));
+console.log(reverse)
+
+
+
+
+<!--
+   for the length comparison 
+    
+    
+    const array1 = ["abc", "1239876", "xyz",["654"]];
+var val = 0
+for(let i = 0; i<array1.length; i++){
+    // i = 0; array1[i] = abc
+     if(array1[i].length > val){  
+                val = array1[i].length
+    }
+}
+
+console.log(val) 
+for the biggest string value
+const  val = ["hello","html", "newcar","98","76"]
+var val1 = "";
+for(let i = 0; i<val.length; i++){
+   
+ if(val[i]>val1){
+     val1 = val[i]
+ }   
+}
+console.log(val1)
+
+sort array
+ var array = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+let  tree =array.sort(function (a,b){
+    {
+        return a-b
+    }
+})
+console.log(tree)
+
+
+
+
+
+
+
+Q.: how to find particular character in string in javascript
+  sol : function remove_String (val) {
+     const val1 = val.split(" ")
+       
+  for (let i =0; i<val1.length;i++){
+      if(val1[i].includes("not")){
+          let x = val.replace(val1[i],"you")
+          console.log(x)  
+      } 
+}
+  
+}
+remove_String("hello js is not")
+for same value in 2 times
+function remove_String (val) {
+     const val1 = val.split(" ")
+       
+  for (let i =0; i<val1.length;i++){
+      if(val1[i].includes("you")){
+          let x = val.replace(val1[i],"not")
+          console.log(x)  
+      } 
+}
+  
+}
+remove_String("hello js is you fdg hgdchg you gfdg js")
+
+
+
+-->
+
+Q. create object key  
+sdol : function findkey(user) {
+    const char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    let createKey = ''
+     const user2 =char.length
+     for(let i = 0;i<char.length;i++){
+        
+       createKey = createKey+char.charAt(Math.floor(Math.random()*user2))  
+         
+     }
+    
+  return(createKey)  
+    
+}
+findkey(2)
+
+
+12/12/22
+Q.85 Write a JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digits.
+sol: function checkNum(a,b,c) {
+    
+    const x = a%10
+    const y =b%10
+   const z = c%10
+  if(x==y||x==z){
+      
+      console.log
+      (`${x}and ,${y},${z} having same digit`)
+  } 
+    
+}
+checkNum(7,47,58)
+ Q.78 Write a JavaScript program to check whether the last digit of the three given positive integers is same
+    sol:
+    function lastdigit(a,b,c) {
+       const val1 = a%10 ;
+          const val2 = b%10 
+       const val3 = c%10 
+    
+        if(val1==val2&&val1==val3){
+          console.log
+          (`${val1}and ,${val2},${val3} having same digit`)
+      }  else {
+          console.log
+          (`${val1} and ,${val2},${val3} not having same digit`)
+      }
+        
+    }
+    lastdigit(28,48,58)
+
+
+Q.80 )Write a JavaScript program to check the total marks of a student in various examinations. The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the examination is "Final-exam." the student will get A+ grade and total marks must be greater than or equal to 90. Return true if the student get A+ grade or false otherwise.
+sol: function studentexam(grade,totalmarks){
+    if(totalmarks){
+      console.log(grade>=90)  
+    } else if(totalmarks) {
+        console.log(grade>=89 &&grade<=100)
+    } 
+    
+    
+}
+studentexam("99","true")
+
+
+let arr1 = [1, 5, 8, 10, 12, 13];
+let arr2 =[2,5,8,1,12,14,13];
+ function give_Duplicates(arr1,arr2)
+const val1 = [4,8,9,2,1,9]
+const val2 = [4,7,9,5,0,9]
+ function FindValue(x, y) {
+     let value  = [];
+for (let i = 0; i<val1.length; i++ ){
+    for(let j = 0;j<val2.length; j++){
+        if(val1[i]===val2[j]){
+            value.push(val2[j])
+            break;
+        }
+    }
+}
+ console.log(value)
+ }
+
+ // /* FOR ODD EVEN BY IF ELSE
+//  Ex-1:  let n = 38 
+// if(n%2 == 0){
+//     console.log("even")
+// }else{
+//     console.log("odd")
+// }
+// VM1222:3 even
+//  Ex-2: let n = 35 
+// if(n%2 != 0){
+//     console.log("odd")
+// }else{
+//     console.log("even")
+// }
+// VM1178:3 odd
+
+//  Ex-3 FOR A NO. is NUMBER OR NOT
+// const x = 7
+// console.log(typeof(x))
+// VM3015:2 number
+// const x = "hey js "
+// console.log(typeof(x))
+
+// VM3642:2 string
+
+//  EX-4 const browser = 98896
+// if(typeof browser === "number"){
+//     console.log("its a no.")}
+// else{
+//     console.log("not a no.")
+// }
+// VM4549:3 its a no.
+//  EX-5 FIND LARGEST NO.
+// let s =78;
+// let t = 23;
+// if(s>t){
+//     console.log("right")
+// }else{
+//     console.log("wrong")}
+// VM4884:4 right
+// undefined
+
+//  EX-6 let s =78;
+// let t = 23;
+// if(s<t){
+//     console.log("right")
+// }else{
+//     console.log("wrong")}
+
+// VM4930:6 wrong
+// LEAP YEAR
+// year =  567;
+// function jsIs (year) {
+// if(year%4===0 && year%100 !=0){
+//     console.log("leapyear")
+// } 
+// else if(year%400 ===0){
+
+// console.log("leap year")
+    
+// }
+// else {
+// console.log("not a leap year")
+// }
+// }
+
+// 567
+// ex-6
+// FOR GREATER Q.4
+// var a, b, c
+// a =78;
+// b= 43;
+// c= 12;
+// if(a>b && a>c){  
+//     console.log("value of a is greater")
+// }
+// else if(b>a && b>c)
+//     {
+//     console.log("value of b is greater")
+//     }
+
+// else if(c>a&&c>b)
+// {
+//     console.log("value of c is greater")
+// }
+//     else 
+// {
+//     console.log("wrong value")
+//     }
+// VM1315:6 value of a is greater
+// undefined
+
+
+ Q.3 Find the largest of two number
+ Sol -;  EX-1 FIND LARGEST NO.
+ let s =78;
+let t = 23;
+if(s>t){
+ console.log("right")
+}else{
+     console.log("wrong")}
+ VM4884:4 right
+ EX-2 let s =78;
+ let t = 23;
+ if(s<t){
+  console.log("right")
+ }else{
+  console.log("wrong")}
+
+ VM4930:6 wrong
+
+
+ Q.4  Find the largest of three number .
+ var a, b, c
+ a =78;
+ b= 43;
+ c= 12;
+ if(a>b && a>c){  
+//     console.log("value of a is greater")
+// }
+// else if(b>a && b>c)
+//     {
+//     console.log("value of b is greater")
+//     }
+
+// else if(c>a&&c>b)
+// {
+//     console.log("value of c is greater")
+// }
+//     else 
+// {
+//     console.log("wrong value")
+//     }
+// VM1315:6 value of a is greater
+
+
+/*for triplet sum and multiplications
+
+let x=20;
+let y= 20;
+  if (x == y) {
+    console.log(3 * (x + y))
+    } 
+  else
+  {
+     console.log (x + y) =>120
+let x=20;
+let y= 10;
+  if (x == y) {
+    // return 3 * (x + y);
+    console.log(3 * (x + y))
+    } 
+  else
+  {
+     console.log (x + y)} =>30
+
+ *SPREAD OPERATOR*
+EX- const num1 = [5,6,9];
+const num2 = [8,2,1];
+const sum = [...num1,...num2]
+console.log(sum); =>[ 5, 6, 9, 8, 2, 1 ]
+ 
+ex-: for remove one value from table
+let n =5;
+for (let i = 1; i<=10; i++){
+    if (n*i === 25){
+        continue;
+    } else{
+       console.log(n*i)}
+}
+output:
+5
+10
+15
+20
+30
+35
+40
+45
+50
+METHOD -: a function which is added with object is called as Method
+ let person ={
+ age: 23,
+ firstName: "React",
+ version: 16.8
+function sayhi(){
+      console.log("hello js")
+    }}
+let name = {
+  car: "innova",
+  model: "safari"
+
+}
+person.syahi();
+  HOW TO CONCATENATE OBJECT VALUE:
+         console.log("hello js" +name.car +"name")
+    }}  
+
+FOR FACTORIAL OF ANY NUMBER
+let n = 5
+fact = 1;
+for (let i =1; i<=n ; i++){
+    fact = fact*i;
+}
+console.log(fact) => 120
+  FOR PRINT ODD NO.
+  for (let i = 0 ; i <=50; i++){
+    if(i%2 !== 0){
+        console.log(i)
+    }
+}
+FOR PRINT EVEN NO.
+for (let i = 0 ; i <=50; i++){
+    if(i%2 == 0){
+        console.log(i)
+    }
+}
+
+FOR REMOVE ANY VALUE AND THEIR MULTIPLE LIKE if you dont want to print 7 multiple value 
+for (let i = 0 ; i <=50; i++){
+    if(i%7 !== 0){
+        console.log(i)
+    }
+}
+
+
+ while loop 
+ let i = 1
+while(i<=5) {
+    if(i==4){
+        break;
+    }
+         console.log(i)
+
+ i++
+    
+}
+ 
+ q. 
+ const arr = [5,10,20];
+const arr = [5,10,20];
+const shopk = []
+let value1 = 0;
+let value2 = 0;
+let val = [];
+let finalVal = true;
+for(let i = 0;i<arr.length;i++){
+    if(arr[i] ==5){
+        shopk.push(arr[i]);
+        finalVal = true;
+        val.push(finalVal);
+    }
+    else if(arr[i] ===10){
+        if(shopk.length>0){
+           for(let j = 0;j<shopk.length;j++){
+            if(shopk[j]===5){
+                shopk.splice(j,1)
+                shopk.push(arr[i])
+             finalVal = true;
+             value2++;
+             val.push(finalVal);
+             break;
+            }
+            else{
+                finalVal = false;
+                val.push(finalVal);
+            }
+          }
+         }
+    }
+    else if(arr[i] ===20){
+        if(shopk.length>0){
+           for(let j = 0;j<shopk.length;j++){
+            if(shopk[j]===5){
+                value1++;
+            }
+        }
+        for(let j = 0;j<shopk.length;j++){
+             if(value1>=1 && value2>=1){
+                 shopk.splice(j,1);
+                 shopk.pop(5);
+                value1--;
+                shopk.push(arr[i]);
+                finalVal = true;
+                val.push(finalVal);
+                break
+            }
+            else{
+                finalVal = false;
+                val.push(finalVal);
+            }
+        }
+        }
+    }
+}
+let output = 0;
+for(let i = 0;i<val.length;i++) {
+    if(val[i]===false){
+        output++;
+    }
+}
+if(output>0){
+    console.log(false)
+}else{
+    console.log(true)
+
+
+
+
+     
+    
